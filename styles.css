@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+    align-items: center;
+}
+
+.logo-container, .nav-links, .cart {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1
+}
+
+nav {
+    flex: 2;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.nav-links {
+    font-size: 18px;
+}
+
+.nav-links a {
+    overflow: hidden;
+    display: block;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: 300ms;
+    border-bottom: 3px solid transparent;
+    color: black
+    
+}
+
+.nav-links a:hover {
+    border-bottom: 5px solid rgb(245, 218, 17);
+}
+
+
+.nav-links a.nav-link {
+    border-bottom: 5px solid rgb(245, 218, 17);
+    font-weight: 500
+}
+
+
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.intro-text p {
+    font-size: 22px
+}
+
+.cover {
+    flex: 1   
+}
+
+.cover {
+    height: 60vh;
+    
+
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+    border: none;
+    background: rgb(245, 218, 17);
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cta-select:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: white
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 8px;
+    background: rgb(245, 218, 17);
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: black;
+}
+
+.example {
+    align-items: flex-end;
+    flex: 1
+    
+}
