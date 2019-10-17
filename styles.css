@@ -88,7 +88,6 @@ nav {
 .cover {
     height: 60vh;
     position: relative;
-    
 
 }
 
@@ -147,17 +146,50 @@ form.example button:hover {
     
 }
 
-.img-zoom-lens {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    /*set the size of the lens:*/
-    width: 40px;
-    height: 40px;
+  nav {
+      font-family: monospace;
   }
   
-  .img-zoom-result {
-    border: 1px solid #d4d4d4;
-    /*set the size of the result div:*/
-    width: 700px;
-    height: 300px;
+  
+  li {
+    color: #fff;
+    display: block;
+    
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover {
+      cursor: pointer;
+  }
+  
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+    z-index: +1;
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    background: rgb(250, 248, 248)
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
   }
